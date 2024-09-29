@@ -1,0 +1,15 @@
+<div class="background"></div>
+
+<div class="List">
+
+    <ul  class="ListContent">
+
+    <li *ngFor="let data of dataList" class="ListMeal">
+        <p><strong>Name: </strong> {{data?.strMeal}}</p>
+        <p><strong>Category: </strong> {{data?.strCategory}}</p>
+        <p><strong>Origin: </strong> {{data?.strArea}}</p>
+        <p><strong>Instuctios: </strong>{{data?.strInstructions}}</p>
+    </li>
+             <button (click)="getMeal()" class="btnMeal"> Get meal </button>
+    </ul>
+</div>
